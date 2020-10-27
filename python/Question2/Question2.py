@@ -1,4 +1,4 @@
-import sys
+# import sys
 # You may change this function parameters
 def findMaxProfit(numOfPredictedTimes, predictedSharePrices):
     # Participants code will be here
@@ -14,8 +14,8 @@ def findMaxProfit(numOfPredictedTimes, predictedSharePrices):
 
 def main():
     # line = input().split()
-    numOfPredictedTimes = 14#int(line[0])
-    predictedSharePrices = [5,1,6,3,2,5,6,1,3,6,2,5,5,10]#list(map(int, line[1:]))
+    numOfPredictedTimes = int(line[0])
+    predictedSharePrices = list(map(int, line[1:]))
 
     answer = findMaxProfit(numOfPredictedTimes, predictedSharePrices)
     # Do not remove below line
