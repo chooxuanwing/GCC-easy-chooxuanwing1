@@ -1,4 +1,4 @@
-import sys
+# import sys
 
 def find_min_days(prices, profit):
     # Participants code will be here
@@ -8,8 +8,8 @@ def find_min_days(prices, profit):
     for i in profit:
         temp=[]
         count=0
-        minus=sys.maxsize
-        days = sys.maxsize 
+        minus=10000000
+        days = 10000000 
 
         if (count1>0):
             out=out+","
@@ -44,7 +44,7 @@ def find_min_days(prices, profit):
         # print(out)
         # out=out+str(temp[-1][0]) +" " + str(temp[-1][1])
        
-    return out
+    return out 
 
 n, d = map(int, input().split())
 prices = list(map(int, input().split()))
