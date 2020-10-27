@@ -1,4 +1,4 @@
-import sys
+# import sys
 
 def find_min_days(prices, profit):
     # Participants code will be here
@@ -8,8 +8,8 @@ def find_min_days(prices, profit):
     for i in profit:
         temp=[]
         count=0
-        minus=sys.maxsize
-        days = sys.maxsize 
+        minus=100000000
+        days = 100000000
 
         if (count1>0):
             out=out+","
@@ -35,7 +35,8 @@ def find_min_days(prices, profit):
                         if (temp3<temp4 and len(temp) >= 2):
                             print('calc')
                             temp.pop(-1)
-
+        if (len(temp)==0):
+            temp.append('-1')
                 # elif (count == len(prices)):
                 #     temp.append(str(-1))
                 #     continue
