@@ -3,7 +3,7 @@ import sys
 def find_min_days(prices, profit):
     # Participants code will be here
 
-    out= ""
+    out= "" 
     count1=0
     for i in profit:
         temp=[]
