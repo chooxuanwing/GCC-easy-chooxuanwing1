@@ -49,7 +49,7 @@ def find_min_days(prices, profit):
 n, d = map(int, input().split())
 prices = list(map(int, input().split()))
 profit = list()
-d=2
+# d=2
 # profit=[5,2]
 # prices = [3,6,9,8,2,4]
 # answer = find_min_days(prices,profit)
