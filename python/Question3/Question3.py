@@ -21,9 +21,20 @@ def find_min_days(prices, profit):
                 if (prices[y]-prices[x]==i and y-x < days ):
                     
                     days=y-x
-                    print(days)
+                    
+                    # print(days)
+                    # print(count)
                     temp.append(str(x+1)+" "+str(y+1))
-
+                    # print(len(temp))
+                    # if(len(temp)>1):
+                    #     print(int(temp[-2][2]), int(temp[-1][2]))
+                    #     temp.pop(-1)
+                    if(len(temp)>1):
+                        temp3 =int(temp[-2][2])
+                        temp4 = int(temp[-1][2])
+                        if (temp3<temp4 and len(temp) >= 2):
+                            print('calc')
+                            temp.pop(-1)
 
                 # elif (count == len(prices)):
                 #     temp.append(str(-1))
@@ -35,16 +46,19 @@ def find_min_days(prices, profit):
        
     return out
 
-n, d = map(int, input().split())
-prices = list(map(int, input().split()))
-profit = list()
-d=2
-# profit=[5,2]
-# prices = [3,6,9,8,2,4]
-# profit = [3,2]
-# prices = [3,1,2,1,4,5]
-for i in range(d):
-    profit.append(int(input().strip()))
+# n, d = map(int, input().split())
+# prices = list(map(int, input().split()))
+# profit = list()
+# d=2
+profit=[5,2]
+prices = [3,6,9,8,2,4]
+answer = find_min_days(prices,profit)
+print('answer = ' ,answer)
+print('*********************')
+profit = [3,2]
+prices = [3,1,2,1,4,5]
+# for i in range(d):
+#     profit.append(int(input().strip()))
 answer = find_min_days(prices,profit)
 # Do not remove below line
 print(answer)
