@@ -13,7 +13,7 @@ def findMaxProfit(numOfPredictedTimes, predictedSharePrices):
     return temp
 
 def main():
-    # line = input().split()
+    line = input().split()
     numOfPredictedTimes = int(line[0])
     predictedSharePrices = list(map(int, line[1:]))
 
