@@ -7,7 +7,7 @@ def findMaxProfit(numOfPredictedTimes, predictedSharePrices):
     for i in range(0,numOfPredictedTimes-1):
         if (predictedSharePrices[i+1]-predictedSharePrices[i] > 0):
             temp+=predictedSharePrices[i+1]-predictedSharePrices[i]
-            print(temp)
+            print(temp) 
 
 
     return temp
