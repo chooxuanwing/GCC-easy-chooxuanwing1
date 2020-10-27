@@ -3,7 +3,7 @@
 def find_min_days(prices, profit):
     # Participants code will be here
 
-    out= "" 
+    out= ""  
     count1=0
     for i in profit:
         temp=[]
@@ -33,24 +33,24 @@ def find_min_days(prices, profit):
                         temp3 =int(temp[-2][2])
                         temp4 = int(temp[-1][2])
                         if (temp3<temp4 and len(temp) >= 2):
-                            print('calc')
+                            # print('calc')
                             temp.pop(-1)
         if (len(temp)==0):
             temp.append('-1')
                 # elif (count == len(prices)):
                 #     temp.append(str(-1))
                 #     continue
-        print(temp)       
+        # print(temp)       
         out = out + temp[-1]  
         # print(out)
         # out=out+str(temp[-1][0]) +" " + str(temp[-1][1])
        
-    return out
+    return out 
 
 n, d = map(int, input().split())
 prices = list(map(int, input().split()))
 profit = list()
-d=2
+# d=2
 # profit=[5,2]
 # prices = [3,6,9,8,2,4]
 # answer = find_min_days(prices,profit)
