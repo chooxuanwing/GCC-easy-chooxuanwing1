@@ -8,7 +8,6 @@ def find_min_days(prices, profit):
     for i in profit:
         temp=[]
         count=0
-        minus=100000000
         days = 100000000
 
         if (count1>0):
